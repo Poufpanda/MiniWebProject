@@ -1,5 +1,3 @@
-Projet de Yoshino Hayakawa et Alexandre Vittoz, Grp B.
-
 Pour ouvrir les pages plus rapidement ->
 
 ----------------------------
