@@ -1,0 +1,51 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat Bibliothèque</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Top container: chat + boxes side by side -->
+  <div id="topContainer">
+    <!-- Chat container -->
+    <div id="chatContainer">
+      <h1>Chat Bibliothèque</h1>
+      <form id="pseudoForm">
+        <input id="nameInput" placeholder="Enter your name">
+        <button>Send!</button>
+      </form>
+      <div id="chatBox">
+        <ul id="messages"></ul>
+      </div>
+      <form id="msgForm">
+        <input id="msgInput" placeholder="Type a message">
+        <button id="sendBtn">Send</button>
+      </form>
+      <h1 id="jConnectes">Joueurs connectés :</h1>
+    </div>
+  <div id="bottomContainer"></div>
+      <!-- Boxes container -->
+      <div id="boxContainer">
+        <svg id="boxArea" width="80%" height="100%"></svg>
+      </div>
+    <div id="booksOnConveyor"><svg id="conveyorOverlay"></svg></div>
+    <!-- Conveyor belt at the bottom -->
+    <div id="conveyor"><svg id="conveyorInner" width="100%" height="100%"></svg></div>
+  </div>
+
+  <!-- Current book info -->
+  <div id="currentBook">
+    <p id="title"></p>
+    <p id="auteur"></p>
+    <p id="nom"></p>
+    <p id="genre"></p>
+    <p id="format"></p>
+  </div>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
